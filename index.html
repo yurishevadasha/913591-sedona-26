@@ -9,10 +9,10 @@
   		<nav>
   			<a><img src="img/logo-sedona.svg" width="100" height="50" alt="Логотип отеля Седона"></a> 
   			<ul>
-  				<li><a href="#" aria-lebel="Информация">Информация</a></li>
-  				<li><a href="#" aria-lebel="Фото и видео">Фото и видео</a></li>
-  				<li><a href="#" aria-lebel="Карта штата">Карта штата</a></li>
-  				<li><a href="#" aria-lebel="Гостиницы">Гостиницы</a></li>
+  				<li><a href="#">Информация</a></li>
+  				<li><a href="#">Фото и видео</a></li>
+  				<li><a href="#">Карта штата</a></li>
+  				<li><a href="#">Гостиницы</a></li>
   			</ul>
   		</nav>
   	</header>
@@ -37,35 +37,27 @@
   		<section>
   			<h2 class="visually-hidden">Поиск гостиницы</h2>
   			<!--<button type="button">Поиск гостиницы в Седоне</button>-->
-      <form action="https://echo.htmlacademy.ru" method="post">
-          <button type="text">Поиск гостиницы в Седоне</button>
+        <button type="button">Поиск гостиницы в Седоне</button>
+      <form action="catalog.html" method="post">
         <ul>
   			<li>
-          <p>
-            <label for="arrival-date">Дата заезда:</label>
-            <input id="arrival-date" type="date" name="arrival-date" placeholder="24 апреля 2017">
-          </p>
+          <label for="arrival-date">Дата заезда:</label>
+          <input id="arrival-date" type="date" name="arrival-date" placeholder="24 апреля 2017">
         </li>
         <li>
-          <p>
             <label for="date-of-departure">Дата выезда:</label>
             <input id="date-of-departure" type="date" name="date-of-departure" placeholder="4 июля 2017">
-          </p>
         </li>
         <li>
-          <p>
             <label for="amount-adults">Взрослые:</label>
             <input id="amount-adults" type="number" name="amount-adults">
-          </p>
         </li>
         <li>
-          <p>
-            <label>Дети:</label>
+            <label for="amount-children">Дети:</label>
             <input id="amount-children" type="number" name="amount-children">
-          </p>
         </li>
         </ul>
-        <a href="catalog.html" aria-lebel="Переход на каталог гостиниц"><input type="button" value="Найти"></a>
+        <input type="submit" value="Найти">
       </form>
       </section> 
   	</main>

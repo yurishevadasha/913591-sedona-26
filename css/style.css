@@ -43,9 +43,9 @@ a{
 	color: #000000;	
 }
 
-.main-navigation-list{
+/*.main-navigation-list{
 	list-style: none;
-}
+}*/
 
 .main-navigation-list a{
 	color: #000000;
@@ -54,17 +54,23 @@ a{
 /*Доступность*/
 .main-navigation-list a:hover,
 .main-navigation-list a:focus{
-	border: 2px solid #81b3d2;
 }
 .main-navigation-list a:hover{
 	color: #81b3d2;
 }
 .main-navigation-list a:active{
-	color: #5496bd;
+	color: #cacaca;
+
+}
+.background{
+	background-image: url(../img/background-sedona.jpg);
+	width: 1200px;
+	height: 800px;	
+	background-color: #7aaece;
 }
 
 .welcom-sedona{
-	text-align: center;
+	padding: 61px 370px 79px 371px;
 }
 /*Не знаю как этот момент назвать правильно, это вроде девиз, 
 но я не совсем уверена*/
@@ -212,8 +218,8 @@ a{
 	font-weight: 700;
 }
 
-.footer ul{
-	text-align: center;
+ul{
+
 	list-style: none;
 }
 /*я поняла) только вот*/

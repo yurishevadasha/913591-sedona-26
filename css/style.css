@@ -10,12 +10,30 @@ body{
 	text-transform: uppercase;
 
 	background-color: #ffffff; 
+	min-width: 1280px;
+	min-height: 2762px;
+
+	/*временно для сетки*/
+  	background-repeat: no-repeat;
+  	background-image: url(../img/background-sedona.jpg);
+	width: 1200px;
+	height: 800px;
+	margin-bottom: 50px;
+  	padding: 0;
 }
 
 a{
 	text-decoration: none;
 }
+
+.hotels-page{
+	background-image: none;
+}
+
 .button{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 35px 140px 33px 139px;
 	font-size: 21px;
 	font-weight: 700;
@@ -62,16 +80,7 @@ a{
 	color: #cacaca;
 
 }
-.background{
-	background-image: url(../img/background-sedona.jpg);
-	width: 1200px;
-	height: 800px;	
-	background-color: #7aaece;
-}
 
-.welcom-sedona{
-	padding: 61px 370px 79px 371px;
-}
 /*Не знаю как этот момент назвать правильно, это вроде девиз, 
 но я не совсем уверена*/
 .motto{
@@ -147,6 +156,11 @@ a{
 }
 
 /*для второй страницы*/
+
+.catalog-body{
+	background-color: 
+}
+
 .hotel-list{
 	list-style: none;
 }
@@ -167,7 +181,6 @@ a{
 	font-weight: 700;
 	line-height: 21px;	
 
-	padding: 8px 17px 7px 17px;
 	background-color: #81b3d2;
 	border: none;
 }
@@ -187,7 +200,6 @@ a{
 	font-weight: 700;
 	line-height: 21px;
 
-	padding: 8px 16px 8px 16px;
 	background-color: #766357;
 }
 
@@ -208,21 +220,52 @@ a{
 	line-height: 21px;
 	width: 110px;
 	height: 27px;
-	padding: 5px 16px 6px 13px;
 	background-color: #f2f2f2;
 }
 
 /*Стили дли footer*/
+
+.main-footer{
+	padding: 25px 0;
+	margin-top: 75px;
+	min-height: 150px;
+
+}
+
+.hotels-page .main-footer{
+	margin-top: 20px;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
 .visit{
+	width: 300px;
+	margin: 0;
+	min-height: 150px;
+	margin-right: 130px;
 	font-size: 21px;
 	font-weight: 700;
+	color: #000000;
 }
 
-ul{
+.footer-social{
+	width: 200px;
+	min-height: 150px;
+		list-style: none;
 
-	list-style: none;
 }
-/*я поняла) только вот*/
+
+.web-site{
+	width: 300px;
+	margin: 0;
+	min-height: 150px;
+	margin-left: auto;
+	color: #000000;
+}
+
+
 .footer-social a{
 	background-color: #81b3d2;
 }
@@ -248,6 +291,124 @@ ul{
 }
 
 .web-site{
-	color: #000000;
+
 }
+
+/*Сеточные стили*/
+
+
+.container {
+  width: 1200px;
+  margin-left: 40px;
+}
+
+.main-header{
+	min-height: 50px;
+	background-color: #ffffff;
+}
+.main-navigation{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 50px;
+	background-color: transparent;
+}
+
+.logo{
+	width: 140px;
+	height: 72px;
+	/*display: block;*/
+}
+
+.main-navigation-list{
+	width: 1200px;
+	padding: 0px;
+
+	list-style: none;
+
+	min-height: 56px;
+	margin-top: 0px;
+}
+
+.main-navigation-wrapper{
+	width: 100%;
+	min-height: 56px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.container .background{
+	display: flex;
+	justify-content: center;	
+
+}
+
+.index-form{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 568px;
+	min-height: 395px;
+
+}
+
+.main-form{
+	display: flex;
+	flex-direction: column;
+	min-height: 280px;
+
+}
+
+.form-reservation{
+	padding: 15px;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.li-1{
+	padding-top: 20px;
+}
+
+.li-3{
+	padding-bottom: 20px;
+}
+
+.li-3 input{
+	width: 100px;
+}
+
+.main-hotel{
+	min-height: 445px;
+	margin-bottom: 0px;
+}
+
+.hotel-list{
+	list-style: none;
+}
+
+.hotel{
+	display: flex;
+}
+
+.imagin{
+	margin-left: 35px;
+	padding: 30px;
+}
+
+.block-1{
+	display: flex;
+	justify-content: space-between;
+}
+
 

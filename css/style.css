@@ -9,16 +9,8 @@ body{
 	color: #333333;
 	text-transform: uppercase;
 
-	background-color: #ffffff; 
-	min-width: 1280px;
-	min-height: 2762px;
-
+	background-color: #ffffff;
 	/*временно для сетки*/
-  	background-repeat: no-repeat;
-  	background-image: url(../img/background-sedona.jpg);
-	width: 1200px;
-	height: 800px;
-	margin-bottom: 50px;
   	padding: 0;
 }
 
@@ -26,15 +18,28 @@ a{
 	text-decoration: none;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 .hotels-page{
 	background-image: none;
 }
 
 .button{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 35px 140px 33px 139px;
+	display: inline-block;
+	width: 550px;
+	min-height: 100px;
+	margin-left: 350px;
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 26px;
@@ -81,6 +86,16 @@ a{
 
 }
 
+.welcom-sedona{
+	margin-top: 50px;
+}
+
+.hero{
+	background-image: url(../img/background-sedona.jpg);
+	text-align: center;
+	min-height: 800px;
+}
+
 /*Не знаю как этот момент назвать правильно, это вроде девиз, 
 но я не совсем уверена*/
 .motto{
@@ -94,6 +109,7 @@ a{
 .features-item{
 	text-align: center;
 }
+
 
 .interested{
 	text-align: center;
@@ -121,7 +137,7 @@ a{
 	width: 346px;
 	height: 38px;
 	background-color: transparent;
-	border: #ffffff;
+	border: 2px solid #ffffff;
 	background-color: #f2f2f2;
 }
 
@@ -223,17 +239,12 @@ a{
 	background-color: #f2f2f2;
 }
 
-/*Стили дли footer*/
+/*Стили для footer*/
 
 .main-footer{
 	padding: 25px 0;
-	margin-top: 75px;
 	min-height: 150px;
 
-}
-
-.hotels-page .main-footer{
-	margin-top: 20px;
 }
 
 .main-footer .container {
@@ -242,7 +253,6 @@ a{
 
 .visit{
 	width: 300px;
-	margin: 0;
 	min-height: 150px;
 	margin-right: 130px;
 	font-size: 21px;
@@ -253,13 +263,12 @@ a{
 .footer-social{
 	width: 200px;
 	min-height: 150px;
-		list-style: none;
+	list-style: none;
 
 }
 
 .web-site{
 	width: 300px;
-	margin: 0;
 	min-height: 150px;
 	margin-left: auto;
 	color: #000000;
@@ -298,8 +307,9 @@ a{
 
 
 .container {
-  width: 1200px;
-  margin-left: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .main-header{
@@ -336,12 +346,10 @@ a{
 	min-height: 56px;
 }
 
-.main-navigation-wrapper .container {
+.main-header .container {
   display: flex;
   justify-content: space-between;
 }
-
-
 
 .container .background{
 	display: flex;
@@ -407,8 +415,8 @@ a{
 }
 
 .block-1{
-	display: flex;
-	justify-content: space-between;
+	display: block;
+	text-align: left;
 }
 
 

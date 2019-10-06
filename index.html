@@ -8,26 +8,25 @@
      <!--<link rel="stylesheet" href="css/3.css">-->
 </head>
 <body>
+ <div class="container">
   <header class="main-header">
 	<nav class="main-navigation"> 
-  	  <div class="main-navigation-wrapper">
-  	    <div class="container">
+  	 <div class="container">
 			<a><img class="logo" src="img/logo-sedona.svg" width="140" height="72" alt="Логотип отеля Седона"></a>
   			<ul class="main-navigation-list">
   			  <li><a href="#">Информация</a></li>
   			  <li><a href="#">Фото и видео</a></li>
   			  <li><a href="#">Карта штата</a></li>
-  			  <li><a href="catalog.html">Гостиницы</a></li>  					
-  			</ul>
-  		</div>
-  	  </div>
-  	</nav>
+  			  <li><a href="catalog.html">Гостиницы</a></li>	
+        </ul>
+  	 </div>
+  </nav>
   </header>
-  <main class="container">
-	<h1 class="visually-hidden">SEDONA</h1>  		
-	  <div class="background">
-        <img class="welcom-sedona" src="img/intro-welcome.svg" width="460" height="355" alt="Welcom SEDONA"> <!--крупное фото-->
-	  </div> 
+  <main>
+    <section class="hero">
+	     <h1 class="visually-hidden">SEDONA</h1>  	
+       <img class="welcom-sedona" src="img/intro-welcome.svg" width="460" height="355" alt="Welcom SEDONA"> <!--крупное фото-->
+    </section>
   		<p class="motto">
   			Седона-небольшой городок в Аризоне, заслуживающий большего!
   		</p>
@@ -45,22 +44,22 @@
 		<button class="button" type="button">Поиск гостиницы в Седоне</button> 	
 	<div class="index-form">
 	  <section>
-		<form class="main-form" action="catalog.html" method="post">
+		<form class="main-form" action="https://echo.htmlacademy.ru" method="post">
 		  <ul class="form-reservation">
-			<li class="li-1">
-			  <label for="arrival-date">Дата заезда:</label>
-          	  <input id="arrival-date" type="date" name="arrival-date" placeholder="24 Апреля 2017"> <!--У меня возник вопрос, какой лучше тут тип оставить? я открыла в браузере страницу и увидела, что в поле стоит такой формат: дд.мм.гггг., а на макете написано так: 24 Апреля 2017-->
-        	</li>
-        	<li>
-              <label for="date-of-departure">Дата выезда:</label>
-              <input id="date-of-departure" type="date" name="date-of-departure" placeholder="4 Июля 2017">
-        	</li>
-        	<li class="li-3">
-              <label for="amount-adults">Взрослые:</label>
-              <input id="amount-adults" type="number" name="amount-adults">
-              <label for="amount-children">Дети:</label>
-              <input id="amount-children" type="number" name="amount-children">
-        	</li>
+			  <li class="li-1">
+			    <label for="arrival-date">Дата заезда:</label>
+          <input id="arrival-date" type="text" name="arrival-date" placeholder="24 Апреля 2017">
+        </li>
+        <li>
+          <label for="date-of-departure">Дата выезда:</label>
+          <input id="date-of-departure" type="text" name="date-of-departure" placeholder="4 Июля 2017">
+        </li>
+        <li class="li-3">
+          <label for="amount-adults">Взрослые:</label>
+          <input id="amount-adults" type="number" name="amount-adults" placeholder="2">
+          <label for="amount-children">Дети:</label>
+          <input id="amount-children" type="number" name="amount-children" placeholder="2">
+        </li>
 		  </ul>
 			<button class="find-button" type="submit">Найти</button>
 		</form>
@@ -68,7 +67,6 @@
 	</div>
   </main>
   <footer class="main-footer">
-   	<div class="container">
  	  <span class="visit">#VISITSEDONA</span>
  	  <ul class="footer-social">
         <li>
@@ -85,8 +83,8 @@
 		  <a href="https://htmlacademy.ru/intensive/htmlcss">
 		    <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy" aria-label="Логотип htmlacademy">
 		  </a> 				
-        </p>
-    </div>
+    </p>
   </footer>
+ </div>
 </body>
 </html>
